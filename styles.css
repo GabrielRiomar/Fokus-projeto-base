@@ -1,7 +1,7 @@
 :root {
     --color-primary: #123456;
     --color-secondary: #FFF;
-    --color-tertiary: #f7fa3c;
+    --color-black: #000;
     --azul-royal: #144480;
     --fundo-card-timer: rgba(20, 68, 128, 0.30);
     --lils: #B872FF;
@@ -36,6 +36,20 @@ body {
     background: url("/imagens/pattern.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-black);
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -160,7 +174,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__card-primary-button:hover {
-    color: var(--color-tertiary);
+    color: var(--azul-royal);
+    font-weight: 700;
 }
 .app__footer {
     display: flex;
